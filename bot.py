@@ -80,7 +80,7 @@ def mark_task(message, chat_id, tasks):
             return
         if not tasks[task_no - 1].endswith(" ✅"):
             tasks[task_no - 1] += " ✅"
-        bot.send_message(chat_id, f"Task {task_no} marked as complete.")
+        bot.send_message(chat_id, f"Task {tasks[task_no - 1]} marked as complete.")
     except ValueError:
         bot.reply_to(message, "Please provide a valid number: /marktask <task number>")
 
