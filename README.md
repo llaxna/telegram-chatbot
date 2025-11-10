@@ -26,6 +26,3 @@ A simple **Telegram bot** built with `pyTelegramBotAPI` that helps students **ma
 - `/help` → (optional) Display all commands  
 
 Each user has their own separate task list (stored in memory).
-
----
-
